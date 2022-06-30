@@ -1,7 +1,28 @@
-*{
+:root {
+    --theme_color: #77BB3F;
+    --theme_light_color: #F9FFF3;
+}
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 .header {
@@ -24,12 +45,15 @@ nav {
     top: 0;
     position: fixed;
     width: 90%;
+    height: 50px;
     background: rgba(56, 56, 56, 0.5);
     z-index: 1;
 }
 
 nav img {
-    width: 150px;
+    width: 250px;
+    color: #77BB3F;
+    filter: invert(69%) sepia(13%) saturate(1982%) hue-rotate(50deg) brightness(94%) contrast(83%);
 }
 
 .nav-links {
@@ -54,7 +78,7 @@ nav img {
     content: '';
     width: 0%;
     height: 2px;
-    background: #f44336;
+    background: var(--theme_color);
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -95,11 +119,12 @@ nav img {
     position: relative;
     cursor: pointer;
     transition: 1s;
+    text-align: center;
 }
 
 .hero-btn:hover {
-    border: 1px solid #f44336;
-    background: #f44336;
+    border: 1px solid var(--theme_color);
+    background: var(--theme_color);
     transition: 1s;
 }
 
@@ -119,14 +144,14 @@ nav .fa-solid {
     }
     .nav-links {
         position: fixed;
-        background: #f44336;
+        background: var(--theme_color);
         height: 100vh;
         width: 200px;
         top: 0;
         right: -200px;
         text-align: left;
         z-index: 2;
-        transition: 1s;
+        transition: 0.5s;
     }
     nav .fa-solid {
         display: block;
@@ -182,7 +207,7 @@ p {
 
 .course-col {
     flex-basis: 31%;
-    background: #fff3f3;
+    background: var(--theme_light_color);
     border-radius: 10px;
     margin-bottom: 5%;
     padding: auto;
@@ -233,7 +258,7 @@ p {
 }
 
 .layer:hover {
-    background: rgba(226, 0, 0, 0.7);
+    background: rgba(119, 187, 63, 0.7);
 }
 
 .layer h3 {
@@ -291,7 +316,7 @@ p {
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background: #fff3f3;
+    background: var(--theme_light_color);
     padding: 25px;
     cursor: pointer;
     display: flex;
@@ -314,10 +339,10 @@ p {
 }
 
 .testimonial-col .fa-solid {
-    color: #f44336;
+    color: var(--theme_color);
 }
 .testimonial-col .fa-regular {
-    color: #f44336;
+    color: var(--theme_color);
 }
 
 .cta {
@@ -350,8 +375,45 @@ p {
 }
 
 .icons .fa-brands {
-    color: #f44336;
+    color: var(--theme_color);
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
 }
+
+.rainbow { 
+    height: 100%;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+  
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;}
+  
+  @-webkit-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-moz-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-o-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @keyframes rainbow { 
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
