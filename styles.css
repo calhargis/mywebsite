@@ -36,6 +36,10 @@ body {
 
 }
 
+a { /* or whatever your class */
+    text-decoration: none;
+ }
+
 nav {
     display: flex;
     padding: 2% 6%;
