@@ -383,6 +383,13 @@ p {
     padding: 18px 0;
 }
 
+.icons .fa-solid {
+    color: var(--theme_color);
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
 .dark-mode {
     background-color: black;
     color: white;
