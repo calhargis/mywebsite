@@ -11,7 +11,7 @@
 
 
 body {
-    animation: fadeInAnimation ease 2s;
+    animation: fadeInAnimation ease 1.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -29,7 +29,7 @@ body {
 
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/banner.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/pfp.jpeg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -52,8 +52,8 @@ nav {
 
 nav img {
     width: 250px;
-    color: #77BB3F;
-    filter: invert(69%) sepia(13%) saturate(1982%) hue-rotate(50deg) brightness(94%) contrast(83%);
+    /* color: #77BB3F; */
+    filter: invert(29%) sepia(12%) saturate(1782%) hue-rotate(50deg) brightness(94%) contrast(83%);
 }
 
 .nav-links {
@@ -96,6 +96,7 @@ nav img {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    margin-top: 100px;
 }
 
 .text-box h1 {
@@ -245,6 +246,7 @@ p {
 .campus-col img {
     width: 100%;
     display: block;
+    height: 100%;
 }
 
 .layer {
@@ -279,26 +281,26 @@ p {
     opacity: 1;
 }
 
-.facilities {
+.skills {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
 }
 
-.facilities-col {
+.skills-col {
     flex-basis: 31%;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
 }
 
-.facilities-col img {
+.skills-col img {
     width: 100%;
     border-radius: 10px;
 }
 
-.facilities-col h3 {
+.skills-col h3 {
     margin-top: 16px;
     margin-bottom: 15px;
     text-align: left;
@@ -380,6 +382,15 @@ p {
     cursor: pointer;
     padding: 18px 0;
 }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+  .light-mode {
+    background-color: white;
+    color: black;
+  }
 
 .rainbow { 
     height: 100%;
