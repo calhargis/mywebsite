@@ -125,6 +125,7 @@ nav img {
     cursor: pointer;
     transition: 1s;
     text-align: center;
+    margin: 10px;
 }
 
 .hero-btn:hover {
