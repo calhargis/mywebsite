@@ -78,6 +78,10 @@ nav img {
     font-size: 13px;
 }
 
+a { 
+    color: white;
+}
+
 .nav-links ul li::after {
     content: '';
     width: 0%;
@@ -232,7 +236,7 @@ p {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-.campus {
+.projects {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -240,7 +244,7 @@ p {
 
 }
 
-.campus-col {
+.projects-col {
     flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -248,7 +252,7 @@ p {
     overflow: hidden;
 }
 
-.campus-col img {
+.projects-col img {
     width: 100%;
     display: block;
     height: 100%;
@@ -439,4 +443,13 @@ p {
       0%{background-position:0% 82%}
       50%{background-position:100% 19%}
       100%{background-position:0% 82%}
+  }
+
+  .machine-learning h2 {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .machine-learning p {
+    font-weight: bold;
   }
